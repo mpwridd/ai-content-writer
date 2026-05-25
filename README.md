@@ -1,41 +1,160 @@
 # AI Content Writer
 
-A professional AI-powered content generation tool built with Next.js and the Vercel AI SDK. Generate blog posts, articles, social media content, emails, product descriptions, and newsletters using the Mimo V2.5 Pro model.
+A beautiful, modern AI content generation app powered by **Mimo v2.5 Pro**. Generate high-quality content for blogs, social media, emails, and more with customizable tones and styles.
 
-## Features
+![AI Content Writer](https://img.shields.io/badge/AI-Powered-purple) ![Next.js](https://img.shields.io/badge/Next.js-14-black) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8)
 
-- 🖊️ 6 content types: Blog Post, Article, Social Media, Email, Product Description, Newsletter
-- 🎨 Warm orange/amber themed UI
-- ⚡ Streaming output for real-time generation
-- 📋 Copy to clipboard
-- 📊 Word count display
-- 📝 Generation history (last 5)
-- 🎯 Tone & length customization
+## ✨ Features
 
-## Setup
+- **Multiple Content Types**: Blog Posts, Twitter Threads, LinkedIn Posts, Emails, YouTube Scripts, Product Descriptions
+- **Tone Customization**: Professional, Casual, Funny, Persuasive, Informative
+- **Word Count Control**: Adjustable slider for content length
+- **Beautiful UI**: Modern gradient design with smooth animations
+- **Copy to Clipboard**: One-click content copying
+- **Download as TXT**: Save content as text files
+- **Content History**: Track and revisit generated content
+- **Mobile Responsive**: Works perfectly on all devices
+- **Powered by Mimo v2.5 Pro**: State-of-the-art AI model
 
-1. Install dependencies:
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+- Mimo API Key
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/ai-content-writer.git
+cd ai-content-writer
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Copy `.env.example` to `.env.local` and add your API key:
+3. Set up environment variables:
 ```bash
 cp .env.example .env.local
 ```
 
-3. Run the development server:
+Edit `.env.local` and add your Mimo API key:
+```
+MIMO_API_KEY=your_mimo_api_key_here
+```
+
+4. Run the development server:
 ```bash
 npm run dev
 ```
 
-## Environment Variables
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- `OPENAI_API_KEY` - Your API key for the OpenAI-compatible endpoint
-- `OPENAI_BASE_URL` - The base URL for the API (default: `https://api.openai.com/v1`)
+## 🎨 Content Types
 
-## Deploy
+| Type | Description |
+|------|-------------|
+| **Blog Post** | Long-form articles with SEO optimization |
+| **Twitter Thread** | Engaging multi-tweet threads |
+| **LinkedIn Post** | Professional networking content |
+| **Email** | Business and marketing emails |
+| **YouTube Script** | Video scripts with hooks and CTAs |
+| **Product Description** | Compelling product copy |
 
-Deploy to Vercel:
+## 🎭 Tones
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-repo/ai-content-writer)
+- **Professional**: Formal business communication
+- **Casual**: Friendly, conversational style
+- **Funny**: Humorous and entertaining
+- **Persuasive**: Convincing and action-oriented
+- **Informative**: Educational and fact-based
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **AI Model**: Mimo v2.5 Pro
+- **Deployment**: Vercel-ready
+
+## 📦 Project Structure
+
+```
+ai-content-writer/
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   └── generate/
+│   │   │       └── route.ts
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── ContentHistory.tsx
+│   │   ├── ContentPreview.tsx
+│   │   ├── ContentTypeSelector.tsx
+│   │   ├── GenerateButton.tsx
+│   │   ├── Header.tsx
+│   │   ├── Sidebar.tsx
+│   │   ├── ToneSelector.tsx
+│   │   ├── TopicInput.tsx
+│   │   └── WordCountSlider.tsx
+│   └── lib/
+│       └── prompts.ts
+├── .env.example
+├── .gitignore
+├── README.md
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.ts
+└── tsconfig.json
+```
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import project on [Vercel](https://vercel.com)
+3. Add environment variable `MIMO_API_KEY`
+4. Deploy!
+
+### Manual Deployment
+
+```bash
+npm run build
+npm start
+```
+
+## 📝 Environment Variables
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `MIMO_API_KEY` | Your Mimo v2.5 Pro API key | Yes |
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Powered by [Mimo v2.5 Pro](https://mimo.ai)
+
+---
+
+Made with ❤️ and AI
