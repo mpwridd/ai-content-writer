@@ -1,3 +1,11 @@
+# AI Agent App - Powered by Mimo v2.5 Pro
+
+## Dashboard Preview
+
+![Dashboard](screenshot.png)
+
+---
+
 # AI Content Writer
 
 A beautiful, modern AI content generation app powered by **Mimo v2.5 Pro**. Generate high-quality content for blogs, social media, emails, and more with customizable tones and styles.
